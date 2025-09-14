@@ -45,6 +45,25 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+                <!-- Spring Boot starters -->
+  
+                <dependency>
+                  <groupId>org.springframework.boot</groupId>
+                  <artifactId>spring-boot-starter-data-jpa</artifactId>
+                </dependency>
+
+                <!-- SQL Server -->
+                <dependency>
+                  <groupId>com.microsoft.sqlserver</groupId>
+                  <artifactId>mssql-jdbc</artifactId>
+                </dependency>
+
+                <!-- Flyway -->
+                <dependency>
+                  <groupId>org.flywaydb</groupId>
+                  <artifactId>flyway-core</artifactId>
+                </dependency>
+
 	</dependencies>
 
 	<build>

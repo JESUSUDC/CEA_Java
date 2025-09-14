@@ -5,10 +5,4 @@
 
 package com.actividad.Infrastructure.adapter.in.rest.response;
 
-/**
- *
- * @author nayid
- */
-public class AsignacionHttpResponse {
-
-}
+public record AsignacionHttpResponse(String asignacionId, String estado) {}

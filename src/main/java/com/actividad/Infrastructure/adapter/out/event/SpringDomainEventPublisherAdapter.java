@@ -5,10 +5,20 @@
 
 package com.actividad.Infrastructure.adapter.out.event;
 
-/**
- *
- * @author nayid
- */
-public class SpringDomainEventPublisherAdapter {
+import application.port.out.DomainEventPublisherPort;
+import domain.event.DomainEvent;
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.stereotype.Component;
 
+import java.util.List;
+
+@Component
+public class SpringDomainEventPublisherAdapter implements DomainEventPublisherPort {
+    private final ApplicationEventPublisher publisher;
+    public SpringDomainEventPublisherAdapter(ApplicationEventPublisher publisher){ this.publisher = publisher; }
+
+    @Override public void publish(List<DomainEvent> events) {
+        events.forEach(publisher::publishEvent);
+        // Alternativa: serializar y enviar a Kafka/RabbitMQ aquí.
+    }
 }

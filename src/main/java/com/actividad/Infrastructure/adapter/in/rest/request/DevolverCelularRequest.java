@@ -6,9 +6,10 @@
 package com.actividad.Infrastructure.adapter.in.rest.request;
 
 /**
- *
- * @author nayid
+ * Request opcional para devolver un celular.
+ * Si tu endpoint usa solo el PathVariable (asignacionId), este request puede quedar vacío.
+ * Mantengo un campo libre por si quieres auditar el motivo en el futuro.
  */
-public class DevolverCelularRequest {
-
+public record DevolverCelularRequest(String motivo) {
+    public DevolverCelularRequest() { this(null); } // permite body vacío {}
 }

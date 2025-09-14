@@ -5,10 +5,35 @@
 
 package com.actividad.Infrastructure.adapter.in.rest;
 
-/**
- *
- * @author nayid
- */
+import application.port.in.AsignarCelularUseCase;
+import application.port.in.DevolverCelularUseCase;
+import infrastructure.adapter.in.rest.request.AsignarCelularRequest;
+import infrastructure.adapter.in.rest.response.AsignacionHttpResponse;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/asignaciones")
 public class AsignacionesController {
 
+    private final AsignarCelularUseCase asignarUC;
+    private final DevolverCelularUseCase devolverUC;
+
+    public AsignacionesController(AsignarCelularUseCase asignarUC,
+                                  DevolverCelularUseCase devolverUC) {
+        this.asignarUC = asignarUC;
+        this.devolverUC = devolverUC;
+    }
+
+    @PostMapping
+    public ResponseEntity<AsignacionHttpResponse> asignar(@RequestBody AsignarCelularRequest req) {
+        String id = asignarUC.asignar(req.usuarioId(), req.celularId());
+        return ResponseEntity.status(201).body(new AsignacionHttpResponse(id, "ASIGNADO"));
+    }
+
+    @PostMapping("/{asignacionId}/devolver")
+    public ResponseEntity<Void> devolver(@PathVariable String asignacionId) {
+        devolverUC.devolver(asignacionId);
+        return ResponseEntity.noContent().build();
+    }
 }

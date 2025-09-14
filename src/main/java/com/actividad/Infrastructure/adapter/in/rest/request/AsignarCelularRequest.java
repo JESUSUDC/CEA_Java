@@ -5,10 +5,4 @@
 
 package com.actividad.Infrastructure.adapter.in.rest.request;
 
-/**
- *
- * @author nayid
- */
-public class AsignarCelularRequest {
-
-}
+public record AsignarCelularRequest(String usuarioId, String celularId) {}
