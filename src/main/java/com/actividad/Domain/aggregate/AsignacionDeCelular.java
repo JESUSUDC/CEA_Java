@@ -5,11 +5,11 @@
 
 package com.actividad.Domain.aggregate;
 
-import domain.event.CelularAsignadoAUsuario;
-import domain.event.CelularDevueltoPorUsuario;
-import domain.event.DomainEvent;
-import domain.exception.DomainException;
-import domain.exception.ImeiDuplicadoException;
+import com.actividad.Domain.event.CelularAsignadoAUsuario;
+import com.actividad.Domain.event.CelularDevueltoPorUsuario;
+import com.actividad.Domain.event.DomainEvent;
+import com.actividad.Domain.exception.DomainException;
+import com.actividad.Domain.exception.ImeiDuplicadoException;
 
 import java.util.ArrayList;
 import java.util.Collections;

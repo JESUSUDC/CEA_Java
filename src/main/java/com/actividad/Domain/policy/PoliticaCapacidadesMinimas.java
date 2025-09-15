@@ -5,8 +5,8 @@
 
 package com.actividad.Domain.policy;
 
-import domain.entity.Celular;
-import domain.entity.Usuario;
+import com.actividad.Domain.entity.Celular;
+import com.actividad.Domain.entity.Usuario;
 
 public final class PoliticaCapacidadesMinimas implements PoliticaAsignacion {
     private String motivo = "";

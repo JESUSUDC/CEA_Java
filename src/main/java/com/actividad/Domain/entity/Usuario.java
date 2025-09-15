@@ -5,8 +5,8 @@
 
 package com.actividad.Domain.entity;
 
-import domain.exception.DomainException;
-import domain.valueobject.Email;
+import com.actividad.Domain.exception.DomainException;
+import com.actividad.Domain.valueObject.Email;
 import java.util.Objects;
 
 public final class Usuario {

@@ -60,9 +60,15 @@
 
                 <!-- Flyway -->
                 <dependency>
-                  <groupId>org.flywaydb</groupId>
-                  <artifactId>flyway-core</artifactId>
+                    <groupId>org.flywaydb</groupId>
+                    <artifactId>flyway-core</artifactId>
+                  </dependency>
+                  <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-sqlserver -->
+                <dependency>
+                    <groupId>org.flywaydb</groupId>
+                    <artifactId>flyway-sqlserver</artifactId>
                 </dependency>
+
 
 	</dependencies>
 
@@ -95,10 +101,20 @@
                         <plugin>
                             <groupId>org.jacoco</groupId>
                             <artifactId>jacoco-maven-plugin</artifactId>
-                            <version>0.8.11</version>
+                            <version>0.8.12</version> <!-- o superior -->
                             <executions>
                               <execution>
                                 <goals><goal>prepare-agent</goal></goals>
+                                <configuration>
+                                  <excludes>
+                                    <exclude>java/**</exclude>
+                                    <exclude>javax/**</exclude>
+                                    <exclude>jdk/**</exclude>
+                                    <exclude>sun/**</exclude>
+                                    <exclude>com/sun/**</exclude>
+                                  </excludes>
+                                  <propertyName>surefireArgLine</propertyName>
+                                </configuration>
                               </execution>
                               <execution>
                                 <id>report</id>
@@ -129,6 +145,16 @@
                               </execution>
                             </executions>
                           </plugin>
+
+                          <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-surefire-plugin</artifactId>
+                            <version>3.2.5</version>
+                            <configuration>
+                              <argLine>${surefireArgLine} -XX:+EnableDynamicAgentLoading</argLine>
+                            </configuration>
+                          </plugin>
+
 		</plugins>
 	</build>
 

@@ -5,9 +5,9 @@
 
 package com.actividad.Domain.factory;
 
-import domain.entity.Celular;
-import domain.exception.DomainException;
-import domain.valueobject.Imei;
+import com.actividad.Domain.entity.Celular;
+import com.actividad.Domain.exception.DomainException;
+import com.actividad.Domain.valueObject.Imei;
 
 public final class CelularFactory {
     private CelularFactory(){}

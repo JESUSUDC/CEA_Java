@@ -8,8 +8,8 @@ package com.actividad.Infrastructure.adapter.out.db.jpa.mapper;
 import com.actividad.Domain.aggregate.AsignacionDeCelular;
 import com.actividad.Domain.entity.Celular;
 import com.actividad.Domain.entity.Usuario;
-import com.actividad.Domain.valueobject.Imei;
-import com.actividad.Domain.valueobject.Email;
+import com.actividad.Domain.valueObject.Imei;
+import com.actividad.Domain.valueObject.Email;
 import com.actividad.Infrastructure.adapter.out.db.jpa.entity.*;
 
 public final class JpaDomainMapper {

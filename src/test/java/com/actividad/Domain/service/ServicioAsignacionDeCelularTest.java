@@ -9,8 +9,8 @@ import com.actividad.Domain.entity.Celular;
 import com.actividad.Domain.entity.Usuario;
 import com.actividad.Domain.policy.Hechos;
 import com.actividad.Domain.policy.PoliticaAsignacion;
-import com.actividad.Domain.valueobject.Email;
-import com.actividad.Domain.valueobject.Imei;
+import com.actividad.Domain.valueObject.Email;
+import com.actividad.Domain.valueObject.Imei;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

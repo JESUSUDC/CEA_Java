@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package com.actividad.Domain.valueobject;
+package com.actividad.Domain.valueObject;
 
 import com.actividad.Domain.exception.DomainException;
 import org.junit.jupiter.api.Test;

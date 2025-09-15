@@ -5,7 +5,7 @@
 
 package com.actividad.Domain.valueObject;
 
-import domain.exception.DomainException;
+import com.actividad.Domain.exception.DomainException;
 import java.util.Objects;
 
 public final class Imei {

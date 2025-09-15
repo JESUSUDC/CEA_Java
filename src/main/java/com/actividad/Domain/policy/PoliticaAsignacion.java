@@ -5,8 +5,8 @@
 
 package com.actividad.Domain.policy;
 
-import domain.entity.Usuario;
-import domain.entity.Celular;
+import com.actividad.Domain.entity.Usuario;
+import com.actividad.Domain.entity.Celular;
 
 public interface PoliticaAsignacion {
     boolean cumple(Usuario u, Celular c, Hechos hechos);
