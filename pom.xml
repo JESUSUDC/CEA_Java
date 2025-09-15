@@ -121,7 +121,7 @@
                                         </limit>
                                       </limits>
                                       <includes>
-                                        <include>domain.*</include>
+                                        <include>com.actividad.Domain.*</include>
                                       </includes>
                                     </rule>
                                   </rules>

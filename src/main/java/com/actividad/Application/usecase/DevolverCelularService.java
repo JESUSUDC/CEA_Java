@@ -5,11 +5,11 @@
 
 package com.actividad.Application.usecase;
 
-import application.port.in.DevolverCelularUseCase;
-import application.port.out.AsignacionRepositoryPort;
-import application.port.out.DomainEventPublisherPort;
-import domain.aggregate.AsignacionDeCelular;
-import domain.exception.DomainException;
+import com.actividad.Application.port.in.DevolverCelularUseCase;
+import com.actividad.Application.port.out.AsignacionRepositoryPort;
+import com.actividad.Application.port.out.DomainEventPublisherPort;
+import com.actividad.Domain.aggregate.AsignacionDeCelular;
+import com.actividad.Domain.exception.DomainException;
 
 public final class DevolverCelularService implements DevolverCelularUseCase {
     private final AsignacionRepositoryPort asignaciones;

@@ -5,14 +5,14 @@
 
 package com.actividad.Application.usecase;
 
-import application.port.in.AsignarCelularUseCase;
-import application.port.out.*;
-import domain.aggregate.AsignacionDeCelular;
-import domain.entity.Celular;
-import domain.entity.Usuario;
-import domain.exception.DomainException;
-import domain.policy.Hechos;
-import domain.service.ServicioAsignacionDeCelular;
+import com.actividad.Application.port.in.AsignarCelularUseCase;
+import com.actividad.Application.port.out.*;
+import com.actividad.Domain.aggregate.AsignacionDeCelular;
+import com.actividad.Domain.entity.Celular;
+import com.actividad.Domain.entity.Usuario;
+import com.actividad.Domain.exception.DomainException;
+import com.actividad.Domain.policy.Hechos;
+import com.actividad.Domain.service.ServicioAsignacionDeCelular;
 
 import java.util.UUID;
 

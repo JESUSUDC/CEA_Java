@@ -5,8 +5,8 @@
 
 package com.actividad.Application.mapper;
 
-import application.dto.response.AsignacionResponse;
-import domain.aggregate.AsignacionDeCelular;
+import com.actividad.Application.dto.response.AsignacionResponse;
+import com.actividad.Domain.aggregate.AsignacionDeCelular;
 
 public final class AsignacionMapper {
     private AsignacionMapper(){}

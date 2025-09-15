@@ -5,7 +5,7 @@
 
 package com.actividad.Application.port.out;
 
-import domain.entity.Celular;
+import com.actividad.Domain.entity.Celular;
 import java.util.Optional;
 
 public interface CelularRepositoryPort {

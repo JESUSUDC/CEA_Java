@@ -5,7 +5,7 @@
 
 package com.actividad.Application.port.out;
 
-import domain.event.DomainEvent;
+import com.actividad.Domain.event.DomainEvent;
 import java.util.List;
 
 public interface DomainEventPublisherPort {

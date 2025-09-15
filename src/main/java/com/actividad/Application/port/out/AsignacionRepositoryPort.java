@@ -5,7 +5,7 @@
 
 package com.actividad.Application.port.out;
 
-import domain.aggregate.AsignacionDeCelular;
+import com.actividad.Domain.aggregate.AsignacionDeCelular;
 import java.util.Optional;
 
 public interface AsignacionRepositoryPort {

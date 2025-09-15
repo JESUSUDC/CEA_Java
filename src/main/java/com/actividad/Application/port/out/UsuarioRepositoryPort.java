@@ -5,7 +5,7 @@
 
 package com.actividad.Application.port.out;
 
-import com.actividad.domain.entity.Usuario;
+import com.actividad.Domain.entity.Usuario;
 import java.util.Optional;
 
 public interface UsuarioRepositoryPort {
