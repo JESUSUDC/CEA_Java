@@ -5,15 +5,15 @@
 
 package com.actividad.Infrastructure.config;
 
-import application.port.in.AsignarCelularUseCase;
-import application.port.in.DevolverCelularUseCase;
-import application.port.out.*;
-import application.usecase.AsignarCelularService;
-import application.usecase.DevolverCelularService;
-import domain.policy.PoliticaCapacidadesMinimas;
-import domain.policy.PoliticaLimitePorUsuario;
-import domain.policy.PoliticaUnicidadImei;
-import domain.service.ServicioAsignacionDeCelular;
+import com.actividad.Application.port.in.AsignarCelularUseCase;
+import com.actividad.Application.port.in.DevolverCelularUseCase;
+import com.actividad.Application.port.out.*;
+import com.actividad.Application.usecase.AsignarCelularService;
+import com.actividad.Application.usecase.DevolverCelularService;
+import com.actividad.Domain.policy.PoliticaCapacidadesMinimas;
+import com.actividad.Domain.policy.PoliticaLimitePorUsuario;
+import com.actividad.Domain.policy.PoliticaUnicidadImei;
+import com.actividad.Domain.service.ServicioAsignacionDeCelular;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

@@ -5,10 +5,10 @@
 
 package com.actividad.Infrastructure.adapter.in.rest;
 
-import application.port.in.AsignarCelularUseCase;
-import application.port.in.DevolverCelularUseCase;
-import infrastructure.adapter.in.rest.request.AsignarCelularRequest;
-import infrastructure.adapter.in.rest.response.AsignacionHttpResponse;
+import com.actividad.Application.port.in.AsignarCelularUseCase;
+import com.actividad.Application.port.in.DevolverCelularUseCase;
+import com.actividad.Infrastructure.adapter.in.rest.request.AsignarCelularRequest;
+import com.actividad.Infrastructure.adapter.in.rest.response.AsignacionHttpResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

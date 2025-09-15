@@ -5,8 +5,8 @@
 
 package com.actividad.Infrastructure.adapter.out.event;
 
-import application.port.out.DomainEventPublisherPort;
-import domain.event.DomainEvent;
+import com.actividad.Application.port.out.DomainEventPublisherPort;
+import com.actividad.Domain.event.DomainEvent;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
 

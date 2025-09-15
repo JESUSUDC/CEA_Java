@@ -5,12 +5,12 @@
 
 package com.actividad.Domain.service;
 
-import domain.entity.Celular;
-import domain.entity.Usuario;
-import domain.policy.Hechos;
-import domain.policy.PoliticaAsignacion;
-import domain.valueobject.Email;
-import domain.valueobject.Imei;
+import com.actividad.Domain.entity.Celular;
+import com.actividad.Domain.entity.Usuario;
+import com.actividad.Domain.policy.Hechos;
+import com.actividad.Domain.policy.PoliticaAsignacion;
+import com.actividad.Domain.valueobject.Email;
+import com.actividad.Domain.valueobject.Imei;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

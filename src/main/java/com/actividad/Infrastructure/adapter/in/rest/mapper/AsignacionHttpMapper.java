@@ -5,8 +5,8 @@
 
 package com.actividad.Infrastructure.adapter.in.rest.mapper;
 
-import domain.aggregate.AsignacionDeCelular;
-import infrastructure.adapter.in.rest.response.AsignacionHttpResponse;
+import com.actividad.Domain.aggregate.AsignacionDeCelular;
+import com.actividad.Infrastructure.adapter.in.rest.response.AsignacionHttpResponse;
 import org.springframework.stereotype.Component;
 
 /**

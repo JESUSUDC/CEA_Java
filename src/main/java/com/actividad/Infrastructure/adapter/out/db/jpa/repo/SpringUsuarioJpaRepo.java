@@ -5,7 +5,7 @@
 
 package com.actividad.Infrastructure.adapter.out.db.jpa.repo;
 
-import infrastructure.adapter.out.db.jpa.entity.UsuarioJpa;
+import com.actividad.Infrastructure.adapter.out.db.jpa.entity.UsuarioJpa;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface SpringUsuarioJpaRepo extends JpaRepository<UsuarioJpa, String> { }

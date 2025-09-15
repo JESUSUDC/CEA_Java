@@ -5,7 +5,7 @@
 
 package com.actividad.Infrastructure.adapter.out.db.jpa.repo;
 
-import infrastructure.adapter.out.db.jpa.entity.AsignacionJpa;
+import com.actividad.Infrastructure.adapter.out.db.jpa.entity.AsignacionJpa;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

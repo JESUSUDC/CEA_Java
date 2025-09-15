@@ -5,11 +5,11 @@
 
 package com.actividad.Infrastructure.adapter.out.db.jpa.adapter;
 
-import application.port.out.AsignacionRepositoryPort;
-import domain.aggregate.AsignacionDeCelular;
-import infrastructure.adapter.out.db.jpa.entity.AsignacionJpa;
-import infrastructure.adapter.out.db.jpa.mapper.JpaDomainMapper;
-import infrastructure.adapter.out.db.jpa.repo.SpringAsignacionJpaRepo;
+import com.actividad.Application.port.out.AsignacionRepositoryPort;
+import com.actividad.Domain.aggregate.AsignacionDeCelular;
+import com.actividad.Infrastructure.adapter.out.db.jpa.entity.AsignacionJpa;
+import com.actividad.Infrastructure.adapter.out.db.jpa.mapper.JpaDomainMapper;
+import com.actividad.Infrastructure.adapter.out.db.jpa.repo.SpringAsignacionJpaRepo;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;

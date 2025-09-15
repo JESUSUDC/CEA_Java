@@ -5,15 +5,15 @@
 
 package com.actividad.Application.usecase;
 
-import application.port.out.*;
-import domain.aggregate.AsignacionDeCelular;
-import domain.entity.Celular;
-import domain.entity.Usuario;
-import domain.event.DomainEvent;
-import domain.policy.Hechos;
-import domain.service.ServicioAsignacionDeCelular;
-import domain.valueobject.Email;
-import domain.valueobject.Imei;
+import com.actividad.Application.port.out.*;
+import com.actividad.Domain.aggregate.AsignacionDeCelular;
+import com.actividad.Domain.entity.Celular;
+import com.actividad.Domain.entity.Usuario;
+import com.actividad.Domain.event.DomainEvent;
+import com.actividad.Domain.policy.Hechos;
+import com.actividad.Domain.service.ServicioAsignacionDeCelular;
+import com.actividad.Domain.valueobject.Email;
+import com.actividad.Domain.valueobject.Imei;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;

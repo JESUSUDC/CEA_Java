@@ -5,10 +5,10 @@
 
 package com.actividad.Infrastructure.adapter.out.db.jpa.adapter;
 
-import application.port.out.UsuarioRepositoryPort;
-import domain.entity.Usuario;
-import infrastructure.adapter.out.db.jpa.mapper.JpaDomainMapper;
-import infrastructure.adapter.out.db.jpa.repo.SpringUsuarioJpaRepo;
+import com.actividad.Application.port.out.UsuarioRepositoryPort;
+import com.actividad.Domain.entity.Usuario;
+import com.actividad.Infrastructure.adapter.out.db.jpa.mapper.JpaDomainMapper;
+import com.actividad.Infrastructure.adapter.out.db.jpa.repo.SpringUsuarioJpaRepo;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;

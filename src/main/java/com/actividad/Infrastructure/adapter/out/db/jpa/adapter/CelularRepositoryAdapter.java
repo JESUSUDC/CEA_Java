@@ -5,10 +5,10 @@
 
 package com.actividad.Infrastructure.adapter.out.db.jpa.adapter;
 
-import application.port.out.CelularRepositoryPort;
-import domain.entity.Celular;
-import infrastructure.adapter.out.db.jpa.mapper.JpaDomainMapper;
-import infrastructure.adapter.out.db.jpa.repo.SpringCelularJpaRepo;
+import com.actividad.Application.port.out.CelularRepositoryPort;
+import com.actividad.Domain.entity.Celular;
+import com.actividad.Infrastructure.adapter.out.db.jpa.mapper.JpaDomainMapper;
+import com.actividad.Infrastructure.adapter.out.db.jpa.repo.SpringCelularJpaRepo;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;

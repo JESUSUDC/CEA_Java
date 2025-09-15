@@ -5,12 +5,12 @@
 
 package com.actividad.Infrastructure.adapter.out.db.jpa.mapper;
 
-import domain.aggregate.AsignacionDeCelular;
-import domain.entity.Celular;
-import domain.entity.Usuario;
-import domain.valueobject.Imei;
-import domain.valueobject.Email;
-import infrastructure.adapter.out.db.jpa.entity.*;
+import com.actividad.Domain.aggregate.AsignacionDeCelular;
+import com.actividad.Domain.entity.Celular;
+import com.actividad.Domain.entity.Usuario;
+import com.actividad.Domain.valueobject.Imei;
+import com.actividad.Domain.valueobject.Email;
+import com.actividad.Infrastructure.adapter.out.db.jpa.entity.*;
 
 public final class JpaDomainMapper {
     private JpaDomainMapper(){}

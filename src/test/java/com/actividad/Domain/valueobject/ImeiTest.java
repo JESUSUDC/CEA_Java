@@ -5,7 +5,7 @@
 
 package com.actividad.Domain.valueobject;
 
-import domain.exception.DomainException;
+import com.actividad.Domain.exception.DomainException;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;
