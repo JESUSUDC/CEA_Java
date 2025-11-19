@@ -10,7 +10,9 @@ import com.actividad.Application.port.out.AsignacionRepositoryPort;
 import com.actividad.Application.port.out.DomainEventPublisherPort;
 import com.actividad.Domain.aggregate.AsignacionDeCelular;
 import com.actividad.Domain.exception.DomainException;
+import org.springframework.stereotype.Service;
 
+@Service
 public final class DevolverCelularService implements DevolverCelularUseCase {
     private final AsignacionRepositoryPort asignaciones;
     private final DomainEventPublisherPort publisher;

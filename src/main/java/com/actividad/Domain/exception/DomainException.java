@@ -5,10 +5,6 @@
 
 package com.actividad.Domain.exception;
 
-/**
- *
- * @author Jesus
- */
 public class DomainException extends RuntimeException {
     public DomainException(String message) { super(message); }
 

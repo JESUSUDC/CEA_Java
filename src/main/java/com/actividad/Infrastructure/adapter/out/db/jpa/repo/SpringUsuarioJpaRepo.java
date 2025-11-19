@@ -7,5 +7,11 @@ package com.actividad.Infrastructure.adapter.out.db.jpa.repo;
 
 import com.actividad.Infrastructure.adapter.out.db.jpa.entity.UsuarioJpa;
 import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+import java.util.Optional;
+import java.time.Instant;
 
-public interface SpringUsuarioJpaRepo extends JpaRepository<UsuarioJpa, String> { }
+
+public interface SpringUsuarioJpaRepo extends JpaRepository<UsuarioJpa, String> {
+    Optional<UsuarioJpa> findByEmail(String email);
+}

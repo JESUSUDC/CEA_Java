@@ -12,7 +12,9 @@ import com.actividad.Infrastructure.adapter.out.db.jpa.mapper.JpaDomainMapper;
 import com.actividad.Infrastructure.adapter.out.db.jpa.repo.SpringAsignacionJpaRepo;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Component
 public class AsignacionRepositoryAdapter implements AsignacionRepositoryPort {
@@ -30,5 +32,12 @@ public class AsignacionRepositoryAdapter implements AsignacionRepositoryPort {
 
     @Override public Optional<AsignacionDeCelular> findById(String asignacionId) {
         return repo.findById(asignacionId).map(JpaDomainMapper::toDomain);
+    }
+    
+    @Override 
+    public List<AsignacionDeCelular> findAll() {
+        return repo.findAllByOrderByEstadoAsc().stream()
+            .map(JpaDomainMapper::toDomain)
+            .collect(Collectors.toList());
     }
 }

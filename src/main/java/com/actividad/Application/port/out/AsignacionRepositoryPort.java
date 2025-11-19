@@ -6,10 +6,12 @@
 package com.actividad.Application.port.out;
 
 import com.actividad.Domain.aggregate.AsignacionDeCelular;
+import java.util.List;
 import java.util.Optional;
 
 public interface AsignacionRepositoryPort {
     void save(AsignacionDeCelular asignacion);
     int activosPorUsuario(String usuarioId);
-    Optional<AsignacionDeCelular> findById(String asignacionId); // para devolver()
+    Optional<AsignacionDeCelular> findById(String asignacionId);
+    List<AsignacionDeCelular> findAll(); // ← NUEVO MÉTODO
 }

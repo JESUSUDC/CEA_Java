@@ -3,11 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package com.actividad.Application.dto.response;
+package com.actividad.Application.dto.command;
 
-public record AsignacionResponse(
-    String id,
-    String usuarioNombre,
+public record UpdateCelularCommand(
     String celularId,
-    String estado
+    String marca,
+    String operador,
+    String tecnologiaBanda,
+    int cantidadSim
 ) {}

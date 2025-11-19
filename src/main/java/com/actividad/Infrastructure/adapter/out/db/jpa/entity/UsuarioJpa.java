@@ -13,6 +13,11 @@ public class UsuarioJpa {
     private String usuarioId;
     private String nombre;
     private String email;
+    private String passwordHash; // Nuevo
+
+    public String getPasswordHash() { return passwordHash; }
+    public void setPasswordHash(String passwordHash) { this.passwordHash = passwordHash; }
+
 
     // getters & setters
     public String getUsuarioId() { return usuarioId; }

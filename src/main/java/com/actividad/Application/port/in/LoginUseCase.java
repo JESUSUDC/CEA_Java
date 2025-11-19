@@ -3,11 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package com.actividad.Application.dto.response;
+package com.actividad.Application.port.in;
+import com.actividad.Domain.entity.Usuario;
 
-public record AsignacionResponse(
-    String id,
-    String usuarioNombre,
-    String celularId,
-    String estado
-) {}
+public interface LoginUseCase {
+    Usuario login(String emailOrId, String passwordPlain);
+}

@@ -8,8 +8,12 @@ package com.actividad.Infrastructure.adapter.out.db.jpa.repo;
 import com.actividad.Infrastructure.adapter.out.db.jpa.entity.AsignacionJpa;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import java.util.List;
 
 public interface SpringAsignacionJpaRepo extends JpaRepository<AsignacionJpa, String> {
     @Query("select count(a) from AsignacionJpa a where a.usuarioId = ?1 and a.estado = 'ASIGNADO'")
     int countActivosPorUsuario(String usuarioId);
+    
+    // NUEVO: Obtener todas las asignaciones ordenadas por estado
+    List<AsignacionJpa> findAllByOrderByEstadoAsc();
 }

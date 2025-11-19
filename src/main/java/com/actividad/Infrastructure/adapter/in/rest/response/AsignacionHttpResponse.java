@@ -1,8 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 package com.actividad.Infrastructure.adapter.in.rest.response;
 
-public record AsignacionHttpResponse(String asignacionId, String estado) {}
+public record AsignacionHttpResponse(
+    String asignacionId,
+    String usuarioId,
+    String usuarioNombre,
+    String celularId, 
+    String celularInfo,
+    String estado
+) {}

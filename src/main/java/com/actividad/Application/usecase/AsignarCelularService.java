@@ -13,9 +13,11 @@ import com.actividad.Domain.entity.Usuario;
 import com.actividad.Domain.exception.DomainException;
 import com.actividad.Domain.policy.Hechos;
 import com.actividad.Domain.service.ServicioAsignacionDeCelular;
+import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
+@Service
 public final class AsignarCelularService implements AsignarCelularUseCase {
     private final UsuarioRepositoryPort usuarios;
     private final CelularRepositoryPort celulares;

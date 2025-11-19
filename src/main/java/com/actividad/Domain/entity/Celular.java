@@ -68,4 +68,9 @@ public final class Celular {
         return celularId.equals(((Celular)o).celularId);
     }
     @Override public int hashCode(){ return Objects.hash(celularId); }
+    
+    public String marca() {
+        return marca;
+    }
+
 }

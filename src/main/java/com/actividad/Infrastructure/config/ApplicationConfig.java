@@ -16,12 +16,20 @@ import com.actividad.Domain.policy.PoliticaUnicidadImei;
 import com.actividad.Domain.service.ServicioAsignacionDeCelular;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import com.actividad.Infrastructure.adapter.out.jwt.JwtProvider;
+//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+//import org.springframework.security.crypto.password.PasswordEncoder;
+//import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+//import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.http.HttpMethod;
+
 
 import java.util.List;
 
 @Configuration
 public class ApplicationConfig {
-
+    
+    
     @Bean
     ServicioAsignacionDeCelular servicioAsignacionDeCelular() {
         return new ServicioAsignacionDeCelular(List.of(
@@ -29,6 +37,13 @@ public class ApplicationConfig {
             new PoliticaLimitePorUsuario(),
             new PoliticaCapacidadesMinimas()
         ));
+    }
+    
+    /*@Bean
+    @Primary  // ← MARCA ESTE BEAN COMO PRIMARIO
+    public AsignarCelularUseCase asignarCelularUseCase(
+        AsignarCelularService asignarCelularService) {
+        return asignarCelularService;
     }
 
     @Bean
@@ -44,5 +59,10 @@ public class ApplicationConfig {
     DevolverCelularUseCase devolverCelularUseCase(AsignacionRepositoryPort asignaciones,
                                                   DomainEventPublisherPort publisher) {
         return new DevolverCelularService(asignaciones, publisher);
-    }
+    }*/
+    
+    /*@Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }*/
 }

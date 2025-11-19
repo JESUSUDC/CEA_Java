@@ -3,11 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package com.actividad.Application.dto.response;
+package com.actividad.Application.port.in;
 
-public record AsignacionResponse(
-    String id,
-    String usuarioNombre,
-    String celularId,
-    String estado
-) {}
+
+public interface AuthUseCase {
+    String login(String email, String passwordPlain); // Retorna el JWT si login es correcto
+}

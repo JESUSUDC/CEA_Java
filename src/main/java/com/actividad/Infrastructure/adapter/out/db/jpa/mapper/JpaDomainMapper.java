@@ -11,13 +11,25 @@ import com.actividad.Domain.entity.Usuario;
 import com.actividad.Domain.valueObject.Imei;
 import com.actividad.Domain.valueObject.Email;
 import com.actividad.Infrastructure.adapter.out.db.jpa.entity.*;
+import com.actividad.Domain.valueObject.Password;
+
 
 public final class JpaDomainMapper {
     private JpaDomainMapper(){}
 
     public static Usuario toDomain(UsuarioJpa e) {
-        return Usuario.create(e.getUsuarioId(), e.getNombre(), Email.of(e.getEmail()));
+        return Usuario.create(e.getUsuarioId(), e.getNombre(), Email.of(e.getEmail()), Password.of(e.getPasswordHash()));
     }
+    
+    public static UsuarioJpa toEntity(Usuario u) {
+        UsuarioJpa e = new UsuarioJpa();
+        e.setUsuarioId(u.id());
+        e.setNombre(u.nombre());
+        e.setEmail(u.email().value());
+        e.setPasswordHash(u.password().value()); // Correcto: extrae el hash desde el value object
+        return e;
+    }
+
 
     public static Celular toDomain(CelularJpa e) {
         return Celular.registrar(e.getCelularId(), e.getMarca(), Imei.of(e.getImei()),
@@ -43,4 +55,18 @@ public final class JpaDomainMapper {
         // Para ejemplo simple, omitimos reconstrucción profunda.
         return ra;
     }
+    
+    public static CelularJpa toEntity(Celular c) {
+        CelularJpa e = new CelularJpa();
+        e.setCelularId(c.id());
+        e.setMarca(c.marca());
+        e.setImei(c.imei().value());
+        e.setNfc(c.tieneNfc());
+        e.setHuella(c.tieneHuella());
+        e.setOperador(c.operador());
+        e.setTecnologiaBanda(c.banda());
+        e.setCantidadSim(c.cantidadSim());
+        return e;
+    }
+
 }
