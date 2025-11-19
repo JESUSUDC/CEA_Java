@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/asignaciones")
 public class AsignacionesController {
 
-    private final AsignarCelularUseCase asignarUC;
+    /*private final AsignarCelularUseCase asignarUC;
     private final DevolverCelularUseCase devolverUC;
 
     public AsignacionesController(AsignarCelularUseCase asignarUC,
@@ -35,5 +35,5 @@ public class AsignacionesController {
     public ResponseEntity<Void> devolver(@PathVariable String asignacionId) {
         devolverUC.devolver(asignacionId);
         return ResponseEntity.noContent().build();
-    }
+    }*/
 }

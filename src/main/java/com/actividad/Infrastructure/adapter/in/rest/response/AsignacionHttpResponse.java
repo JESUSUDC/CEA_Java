@@ -4,7 +4,7 @@ public record AsignacionHttpResponse(
     String asignacionId,
     String usuarioId,
     String usuarioNombre,
-    String celularId, 
+    String celularId,
     String celularInfo,
     String estado
 ) {}

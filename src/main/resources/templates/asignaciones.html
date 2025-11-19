@@ -55,7 +55,7 @@
                                 <td class="ps-4 fw-semibold" th:text="${a.usuarioNombre}"></td>
                                 <td>
                                     <i class="fas fa-mobile-alt text-muted me-2"></i>
-                                    <span th:text="${a.celularId}"></span>
+                                    <span th:text="${a.celularInfo}"></span> <!-- CAMBIADO: celularId → celularInfo -->
                                 </td>
                                 <td>
                                     <span th:if="${a.estado == 'ASIGNADO'}" 
